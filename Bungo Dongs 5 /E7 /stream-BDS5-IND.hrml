@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>Player Ms Anime</title>
+
+        <link rel="icon" href="/img/Shianime.png" type="image/x-icon">
+
+        <meta name="robots" content="noindex">
+
+        <meta name="googlebot" content="noindex">
+
+        <meta name="referrer" content="never">
+
+        <meta name="referrer" content="no-referrer">
+
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+
+        <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <video controls crossorigin playsinline poster="">
+
+<source src="https://iq1y1g.dm.files.1drv.com/y4m41XCphUeU_Kjw2gmxuz0QcAey9-JKrLPfsPomyxwqPiC87_4a4izkL2U6-QMTTsQ6Ed0J8SOhCNBPcod_YS204QWzpFB0VvZVAkN73jtqFUhDKk8Q-1AC9m2HU7eTeWCNmSA0spwxevkOJO6JXaqxXAtcxVfWyXxcRhBeMYhxQxt1VwcUB0fxIjtqipsCyQwCa8GA5BqJP5KGmkrj63H0Q/BSDS5-E7-360P-IND.mp4?authkey=!AEyc8A68oFR5qtQ" size="360" type="video/mp4">
+
+<source src="https://iq2hea.dm.files.1drv.com/y4mmvbkJKFQRW6u_VeYrkO_-gv2RXXf-wFwT4OrMpHXroLfbEY0g2s_X0luKtKgBvFklKx5smjYP9ZGKim-nZarNhnX90P-_B6KUz5i2ZonWcbdnoxOFTmLgRcn-_2atsQK7zAyO5HiM6NTZmANpty4idnhLcRPA--eBoDjovqd3twwcgenx8B_vfaJAT3KIJ5a2XYJfuEhGgFgsui6dM7y3A/BSDS5-E7-480P-IND.mp4?authkey=!AANsSPSfzfvUDB8" size="480" type="video/mp4">
+
+                <source src="https://iq0i7q.dm.files.1drv.com/y4myjznvfZg7o9ozUuhEPfwtazMVyfaSNB17hJPOs3cvKqcrHZICrqnIolnJ9T2prAbsdnKLbhTb3yzX3k8PknoXFnvByRjrX0dp6xuka03VSeKkTXYM0ZxRdqlxwME7N5idjIL82tgMjAKidjx3N-jbNFhgiGpfPQNHk7KUPhsIzpT6TREILqbKcdpng5bGrUYaiawFc6n_O5A2TK_Kt4mhg/BSDS5-E7-720P-IND.mp4?authkey=!AEURFyg40l0zMJk" size="720" type="video/mp4">
+
+                <source src="https://iq29yq.dm.files.1drv.com/y4mGcgfWsdu91WcG9k_7eMIz20qduqrSha5G1dsL-v8dazjSSKJNclG9-3XTfApxZ834Mhxhg0k0KUoO7OwkC3Eizdn7OcH7WSSO_5Nu-cAAsdV-xB3QLcAGRb9GksVBLvOdHLeOaYPAIfwIC1JOW8oDROTfg1mhxLz7NIBYtFaPEwj-QCaMMdhT3RLSMEuRCfy7LYFJW_iT2SRv6zYDmn-pQ/BSDS5-E7-1080P-IND.mp4?authkey=!APrFRhqHcLYP4AM" size="1080" type="video/mp4">
+
+                    <!-- Fallback for browsers that don't support the <video> element -->
+
+                    <a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download>Download</a>
+
+            </video>
+
+        </div>
+
+        <!-- Plyr resources and browser polyfills are specified in the pen settings -->
+
+        <style type="text/html">
+
+            .container {
+
+	margin: 50px auto;  
+
+	max-width: 500px;
+
+}
+
+        </style>
+
+        <script type="text/javascript">
+
+            // Change the second argument to your options:
+
+// https://github.com/sampotts/plyr/#options
+
+const player = new Plyr('video', {captions: {active: false}});
+
+
+
+// Expose player so it can be used from the console
+
+window.player = player;
+
+
+
+        </script>
+
+    </body>
+
+</html>
+
