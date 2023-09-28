@@ -1,0 +1,138 @@
+<!-- Docs styles -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CDNSFree2/Plyr/plyr.css" />
+
+<style>
+
+        .watermark {
+
+            position: absolute;
+
+            left: 10px; /* Sesuaikan posisi watermark ke kiri atas */
+
+            top: 10px; /* Sesuaikan posisi watermark ke kiri atas */
+
+            color: #FFFFFF; /* Warna teks watermark (misalnya merah) */
+
+            font-size: 15px; /* Ukuran font teks watermark */
+
+            font-family: 'Pacifico', cursive; /* Font yang digunakan (Pacifico dalam contoh ini) */
+
+            z-index: 2; /* Pastikan watermark tampil di atas video */
+
+            opacity: 0.5; /* Tingkat kejernihan (opacity) watermark */
+
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico"> <!-- Menambahkan font Pacifico dari Google Fonts -->
+
+<!--Add a Simple HTML5 Video tag-->
+
+<div id="container">
+
+  <video controls data-poster="https://images.squarespace-cdn.com/content/v1/594f053cbf629a4fd216a1b2/1583367516929-ZWUQC3HMIJHUNY87XXYC/Itai-no-wa-Iya-nano-de-Bogyoryoku-ni-Kyokufuri-Shitai-to-Omoimasu-Wallpaper.jpg?format=750w" class="vid1">
+
+    <!-- Video files -->
+
+    <source src="https://stream-animuz-asia.animuz-asia.workers.dev/0:/AnimuzDrive/Series/I/Itai%20no%20wa%20Iya%20nano%20de%20Bougyoryoku%20ni%20Kyokufuri%20Shitai%20to%20Omoimasu./Eps%201/360p-4p7T8Ow-kuronime-itainwindbnksto01.mp4" type="video/mp4" size="360" />
+
+    <source src="https://stream-animuz-asia.animuz-asia.workers.dev/0:/AnimuzDrive/Series/I/Itai%20no%20wa%20Iya%20nano%20de%20Bougyoryoku%20ni%20Kyokufuri%20Shitai%20to%20Omoimasu./Eps%201/480p-sewGvVM-kuronime-itainwindbnksto01.mp4" type="video/mp4" size="480" />
+
+<source src="https://stream-animuz-asia.animuz-asia.workers.dev/0:/AnimuzDrive/Series/I/Itai%20no%20wa%20Iya%20nano%20de%20Bougyoryoku%20ni%20Kyokufuri%20Shitai%20to%20Omoimasu./Eps%201/720p-iS8vGuS-kuronime-itainwindbnksto01.mp4%20~%20pixeldrain.mp4" type="video/mp4" size="720" />
+
+<source src="https://stream-animuz-asia.animuz-asia.workers.dev/0:/AnimuzDrive/Series/I/Itai%20no%20wa%20Iya%20nano%20de%20Bougyoryoku%20ni%20Kyokufuri%20Shitai%20to%20Omoimasu./Eps%201/1080p-1pjDvmW-kuronime-itainwindbnksto01.mp4%20~%20pixeldrain.mp4" type="video/mp4" size="1080" />
+
+    <!-- Caption files -->
+
+  </video>
+
+</div>
+
+<div class="watermark">Animuz-Asia.xyz</div> <!-- Ganti "Watermark" dengan teks yang Anda inginkan -->
+
+    </div>
+
+    <script>
+
+        const video = document.getElementById('video');
+
+        video.addEventListener('play', () => {
+
+            // Add your logic here for when the video starts playing
+
+        });
+
+        video.addEventListener('pause', () => {
+
+            // Add your logic here for when the video is paused
+
+        });
+
+        video.addEventListener('ended', () => {
+
+            // Add your logic here for when the video ends
+
+        });
+
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.7/plyr.min.js"></script>
+
+<script>
+
+  var controls =
+
+[
+
+    'play-large', // The large play button in the center
+
+   // 'restart', // Restart playback
+
+   // 'rewind', // Rewind by the seek time (default 10 seconds)
+
+    'play', // Play/pause playback
+
+    'fast-forward', // Fast forward by the seek time (default 10 seconds)
+
+    'progress', // The progress bar and scrubber for playback and buffering
+
+    'current-time', // The current time of playback
+
+    'duration', // The full duration of the media
+
+    'mute', // Toggle mute
+
+    'volume', // Volume control
+
+    'captions', // Toggle captions
+
+    'settings', // Settings menu
+
+    'pip', // Picture-in-picture (currently Safari only)
+
+    'airplay', // Airplay (currently Safari only)
+
+    'download', // Show a download button with a link to either the current source or a custom URL you specify in your options
+
+    'fullscreen' // Toggle fullscreen
+
+];
+
+  const player = new Plyr('.vid1',{controls});
+
+</script>
+
+<style>
+
+  :root {
+
+  --plyr-color-main: #e657ff;
+
+    --plyr-video-control-color	:#e8ffba;
+
+}
+
+</style>
+
