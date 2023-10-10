@@ -1,0 +1,106 @@
+<!-- Docs styles -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CDNSFree2/Plyr/plyr.css" />
+<style>
+  
+  /* Gaya untuk pesan kesalahan */
+  .error-message {
+    color: red;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /* Gaya untuk modal popup */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3; /* Pastikan modal tampil di atas video */
+  }
+
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico"> <!-- Menambahkan font Pacifico dari Google Fonts -->
+
+<!--Add a Simple HTML5 Video tag-->
+<div id="container">
+
+  <video controls data-poster="" class="vid1">
+    <!-- Video files -->
+    <source src="https://stream-animuz-asia.animuz-asia.workers.dev/0:/AnimuzDrive/Series/T/Toaru%20ossan/Eps%202/D90bw4go-34572509.mp4" type="video/mp4" size="360" />
+    <source src="https://stream-animuz-asia.animuz-asia.workers.dev/0:/AnimuzDrive/Series/T/Toaru%20ossan/Eps%202/D90bw4go-34572510.mp4" type="video/mp4" size="480" />
+    <source src="https://stream-animuz-asia.animuz-asia.workers.dev/0:/AnimuzDrive/Series/T/Toaru%20ossan/Eps%202/D90bw4go-34572505.mp4" type="video/mp4" size="720" />
+    <source src="https://stream-animuz-asia.animuz-asia.workers.dev/0:/AnimuzDrive/Series/T/Toaru%20ossan/Eps%202/Catatan%2020Kegiatan%2020Seorang%2020Om-Om%2020di%2020VRMMO%2020E2%2020-%2020Earth,%2020Bergabung%2020ke%2020Party%2020-%2020Bstationvideo2332.mp4" type="video/mp4" size="1080" />
+    <!-- Caption files -->
+  </video>
+
+  <!-- Modal popup untuk pesan kesalahan -->
+  <div class="modal" id="errorModal">
+    <div class="modal-content">
+      <p class="error-message">Video Tidak Dapat Di Muat. Silahkan Lapor Kepada Admin</p>
+      <button id="closeModalButton">Tutup</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.7/plyr.min.js"></script>
+
+<script>
+  var controls = [
+    'play-large',
+    'play',
+    'fast-forward',
+    'progress',
+    'current-time',
+    'duration',
+    'mute',
+    'volume',
+    'captions',
+    'settings',
+    'pip',
+    'airplay',
+    'download',
+    'fullscreen'
+  ];
+
+  const player = new Plyr('.vid1', { controls });
+
+  // Menampilkan pesan kesalahan saat video mengalami kesalahan
+  player.on('error', () => {
+    const errorModal = document.getElementById('errorModal');
+    errorModal.style.display = 'block';
+  });
+
+  // Menampilkan modal saat tombol ditampilkan
+  const showModalButton = document.getElementById('showModalButton');
+  showModalButton.style.display = 'block';
+  showModalButton.addEventListener('click', () => {
+    const errorModal = document.getElementById('errorModal');
+    errorModal.style.display = 'block';
+  });
+
+  // Menutup modal saat tombol tutup diklik
+  const closeModalButton = document.getElementById('closeModalButton');
+  closeModalButton.addEventListener('click', () => {
+    const errorModal = document.getElementById('errorModal');
+    errorModal.style.display = 'none';
+  });
+</script>
+
+<style>
+  :root {
+    --plyr-color-main: #e657ff;
+    --plyr-video-control-color: #e8ffba;
+  }
+</style
