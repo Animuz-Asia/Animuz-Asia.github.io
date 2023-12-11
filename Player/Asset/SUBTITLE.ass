@@ -1,0 +1,27 @@
+;Android EasySubtitles
+
+Title: 
+Original Script: 
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 0
+PlayResY: 0
+Timer: 100.0000
+Synch Point: 
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Action Man,13,&H00FFFFFF,&H0000FFFF,&H00000000,&H80000000,-1,0,0,0,100,100,0,0,1,2,1,2,20,20,3,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:02.00,Default,NTP,,0000,0000,0000,Nama Saya Mahesa
+Dialogue: 0,0:00:05.00,0:00:08.00,Default,NTP,,0000,0000,0000,Saya Menyukai Game Genshin
+Dialogue: 0,0:00:10.00,0:00:23.00,Default,NTP,,0000,0000,0000,Saya Juga Suka Ngoding
