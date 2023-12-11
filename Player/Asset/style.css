@@ -1,0 +1,20 @@
+/* Menambahkan aturan untuk posisi subtitle di atas video */
+.video-container {
+  position: relative;
+}
+
+.subtitle-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* Untuk memastikan elemen tidak menghalangi interaksi dengan video */
+  z-index: 2; /* Menempatkan di atas video */
+  color: #fff; /* Warna teks subtitle */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Efek bayangan teks untuk meningkatkan kontras */
+  font-weight: bold; /* Atur berat teks sesuai kebutuhan */
+}
